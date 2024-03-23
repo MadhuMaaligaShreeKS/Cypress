@@ -1,0 +1,9 @@
+describe("Any",()=>{
+    it("block",()=>{
+        cy.visit("https://qa-automation-practice.netlify.app/radiobuttons");
+        cy.get("#radio-button1").check();
+        cy.get("#radio-button2").check();
+        cy.get("#radio-button3").check();
+        cy.get("#radio-button4").should("be.disabled");
+    })
+})

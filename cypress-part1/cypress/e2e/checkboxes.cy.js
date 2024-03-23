@@ -1,0 +1,9 @@
+describe("Any",()=>{
+    it("block",()=>{
+        cy.visit("https://qa-automation-practice.netlify.app/checkboxes");
+        cy.get("#checkbox1").check();
+        cy.get("#checkbox1").check();
+        cy.get("#checkbox1").check();
+        cy.get(".btn.btn-primary").should("be.visible");
+    })
+})
